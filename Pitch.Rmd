@@ -19,8 +19,8 @@ I chose to use the Galton Families dataset that we used in a previous course to 
 
 ## Location
 
-The Application can be found here: 
-GitHub Repository here: 
+The Application can be found here: https://schimmelfing.shinyapps.io/heightscomparison/
+GitHub Repository here: https://github.com/schimmelfing/FinalProjectShinyPitch
 
 ## Plot
 
@@ -34,5 +34,4 @@ plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="A
 legend(65,80,pch=c(19,19),col=c("green","blue"),c("female", "male"),bty="o",cex=.6)
 ```
 
-## The End
-Thank you for viewing!
+
