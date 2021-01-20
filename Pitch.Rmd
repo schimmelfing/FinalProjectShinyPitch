@@ -1,0 +1,38 @@
+---
+title: "Final Assignment for Developing Data Products"
+author: "Kara Schimmelfing"
+date: "1/20/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Project Aim
+
+The goal of this project was to create a simple Shiny application and deploy it. Additionally to build a supporting presentation that you are currently viewing.
+
+## Premise
+
+I chose to use the Galton Families dataset that we used in a previous course to do a simple linear model prediction of a child's height based on their parent's height and gender. The idea was it was interactive so you could figure out any possible permutations of parents' heights you wanted. 
+
+## Location
+
+The Application can be found here: 
+GitHub Repository here: 
+
+## Plot
+
+```{r plot, warning =FALSE}
+library(HistData)
+##The data used in the app comes from the GaltonFamilies dataset. 
+data(GaltonFamilies)
+library(HistData)
+data(GaltonFamilies)
+plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Scatterplot of Galton Family Data",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "green", "blue"))
+legend(65,80,pch=c(19,19),col=c("green","blue"),c("female", "male"),bty="o",cex=.6)
+```
+
+## The End
+Thank you for viewing!
